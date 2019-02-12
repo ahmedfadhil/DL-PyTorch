@@ -84,6 +84,10 @@ input_dim = 1
 output_dim = 1
 model = LinearRegressionModel(input_dim, output_dim)
 
+# For GPU model
+if torch.cuda.is_available():
+    model.cuda()
+
 # Instantiate Loss Class
 criterion = nn.MSELoss()
 
@@ -95,8 +99,13 @@ optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
 epochs = 100
 for epoch in range(epochs):
     # Convert numpy array to torch Variable
-    inputs = Variable(torch.from_numpy(x_train))
-    labels = Variable(torch.from_numpy(y_train))
+    # For GPU
+    if torch.cuda.is_available():
+        inputs = Variable(torch.from_numpy(x_train).cuda())
+        labels = Variable(torch.from_numpy(y_train).cuda())
+    else:
+        inputs = Variable(torch.from_numpy(x_train))
+        labels = Variable(torch.from_numpy(y_train))
 
     # Clear gradients wrt parameters
     optimizer.zero_grad()
@@ -150,7 +159,17 @@ load_model = False
 if load_model == True:
     model.load_state_dict(torch.load('awesome_model.pkl'))
 
-
 #     GPU implementation
+
+
+x = [1, 2, 3]
+y = [1, 2, 3]
+colors = np.random.rand(len(x))
+plt.plot(np.unique(x), np.poly1d(np.polyfit(x, y, 1))(np.unique(x)))
+plt.xlabel("some text")
+plt.ylabel("some text")
+
+plt.scatter(x, y, c=colors, alpha=0.5)
+plt.show()
 
 
