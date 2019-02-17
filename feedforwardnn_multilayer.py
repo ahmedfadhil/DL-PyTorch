@@ -63,7 +63,7 @@ optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
 # Step7: train model
 iter = 0
 for epoch in range(n_epochs):
-    for i, (images, labels) in enumerate(train_loader)
+    for i, (images, labels) in enumerate(train_loader):
         images = Variable(images.view(-1, 28 * 28))
         labels = Variable(labels)
 

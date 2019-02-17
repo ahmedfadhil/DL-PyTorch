@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11c8a303-8f1e-441f-a65b-51bb9ecba66b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/feedforwardnn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feedforwardnn_multilayer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feedforwardnn_tanh.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytorch_logistic_reg.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytorch_logistic_reg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feedforwardnn_multilayer.py" beforeDir="false" afterPath="$PROJECT_DIR$/feedforwardnn_multilayer.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -65,8 +61,8 @@
       <file leaf-file-name="feedforwardnn_multilayer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/feedforwardnn_multilayer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="78" column="33" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
+            <state relative-caret-position="367">
+              <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -176,7 +172,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.67107004" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.14398943" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.14398943" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2067239" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -365,8 +361,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/feedforwardnn_multilayer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="78" column="33" selection-start-line="78" selection-start-column="33" selection-end-line="78" selection-end-column="33" />
+        <state relative-caret-position="367">
+          <caret line="65" column="55" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
