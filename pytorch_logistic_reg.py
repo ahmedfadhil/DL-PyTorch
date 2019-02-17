@@ -146,3 +146,60 @@ for epoch in range(n_epochs):
         # print loss
         print('Iteration: {}. Loss: {}. Accuracy: {}'.format(iter, loss.data[0], accuracy))
 
+iter_test = 0
+for images, labels in test_loader:
+    iter_test += 1
+    images = Variable(images.view(-1, 28, 28))
+    outputs = model(images)
+    if iter_test == 1:
+        print('output')
+        print(outputs)
+        # Output size
+        print(outputs.size())
+        # First image output for all 10 possibilities
+        print(outputs[0, :])
+        # The output prediction == hint: 7
+        print(predictions[0, :])
+        # The label prediction == hint: 7
+        print(labels[0])
+    _, predicted = torch.max(outputs.data, 1)
+
+# How does the .sum() function work
+
+a = np.ones((10))
+print(a)
+b = np.ones((10))
+print(b)
+
+print(a == b)
+print((a == b).sum())
+
+# Save model
+save_model = False
+if save_model is True:
+    #     Saves only parameters
+    torch.save(model.state_dict(), 'model.pkl')
+
+#     For a GPU version
+if torch.cuda.is_available():
+    model.cuda()
+
+iter = 0
+for epoch in range(num_epochs):
+    for i, (images, labels) in enumerate(train_loader):
+        #         GPU or CPU
+        if torch.cuda.is_available():
+            # model.cuda()
+            images = Variable(images.view(-1, 28 * 28).cuda())
+            labels = Variable(labels.cuda())
+        else:
+            images = Variable(images.view(-1, 28 * 28), 1)
+            labels = Variable(labels)
+
+        #             total correct predictions
+        if torch.cuda.is_available():
+            correct += (predictions.cpu() == labels.cpu()).sum()
+
+        else:
+            correct += (predictions == labels).sum()
+    accuracy = 100 * correct / total
