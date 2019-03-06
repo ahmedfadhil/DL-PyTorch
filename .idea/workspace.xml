@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11c8a303-8f1e-441f-a65b-51bb9ecba66b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/rnn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cnn_ffnn_validpool.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_ffnn_validpool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/rnn.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,7 +86,7 @@
       <file leaf-file-name="cnn_ffnn_validpool.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cnn_ffnn_validpool.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="946">
+            <state relative-caret-position="1767">
               <caret line="99" column="12" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="12" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
@@ -99,8 +98,8 @@
       <file leaf-file-name="rnn.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+            <state relative-caret-position="342">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -154,6 +153,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,7 +165,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,8 +212,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.67107004" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.14398943" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18097281" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.14398943" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18311875" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -707,7 +706,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cnn_ffnn_validpool.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="946">
+        <state relative-caret-position="1767">
           <caret line="99" column="12" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="12" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
@@ -717,8 +716,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="57" column="28" selection-start-line="57" selection-start-column="28" selection-end-line="57" selection-end-column="28" />
+        <state relative-caret-position="342">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>

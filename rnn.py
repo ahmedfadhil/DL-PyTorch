@@ -49,7 +49,7 @@ class RnnModel(nn.Module):
 #     Instantiate model class
 input_dim = 28
 hidden_dim = 100
-layer_dim = 1
+layer_dim = 1  # Change it to two or more for more layers
 output_dim = 10
 
 model = RnnModel(input_dim, hidden_dim, layer_dim, output_dim)
@@ -59,3 +59,40 @@ learning_rate = 0.1
 optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
 # Parameter in-depth
 len(list(model.parameters()))
+
+list(model.parameters())[0].size()
+list(model.parameters())[2].size()
+list(model.parameters())[1].size()
+list(model.parameters())[3].size()
+list(model.parameters())[4].size()
+
+# Or just do the above with a for loop
+for i in range(len(list(model.parameters()))):
+    print(list(model.parameters())[i]).size()
+
+seq_dim = 28
+iter = 0
+for n_epoch in range(n_epochs):
+    for i, (images, labels) in enumerate(train_loader):
+        #         Load images as variables
+        images = Variable(images.view(-1, seq_dim, input_dim))
+        labels = Variable(labels)
+
+        optimizer.zero_grad()
+        outputs = model(images)
+        loss = criterion(outputs, labels)
+        loss.backward()
+        optimizer.step()
+
+        iter += 1
+        if iter % 500 == 0:
+            correct = 0
+            total = 0
+            for images, labels in test_loader:
+                images = Variable(images.view(-1, seq_dim, input_dim))
+                outputs = model(images)
+                _, predicted = torch.max(outputs.data)
+                total += labels.size(0)
+                correct += (predicted == labels).sum()
+            accuracy = 100 * correct / total
+            print(iter, loss.data[0], accuracy)
